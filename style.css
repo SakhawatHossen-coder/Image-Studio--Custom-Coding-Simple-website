@@ -1,0 +1,433 @@
+* {
+    box-sizing: border-box;
+}
+
+.logo {
+    font-family: 'Nanum Myeongjo', serif;
+    font-weight: bold;
+    display: block;
+    list-style: none;
+    top: 25px;
+}
+
+.logo a {
+    display: block;
+    position: absolute;
+    left: 10px;
+    margin: 15px;
+    top: 10px;
+    font-size: 23px;
+    text-decoration: none;
+    color: black;
+    flex-direction: column;
+}
+
+.logo a:hover {
+    color: rgb(182, 182, 182);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+header nav ul li a:hover {
+    color: rgb(182, 182, 182);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+nav ul {
+    padding: 5px;
+    top: 40px;
+    position: absolute;
+    right: 67%;
+}
+
+header nav ul li {
+    list-style: none;
+    display: inline;
+    padding: 10px;
+    font-family: 'Nanum Myeongjo', serif;
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: black;
+}
+
+.mediaicon {
+    position: absolute;
+    right: 40px;
+    top: 10px;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.mediaicon img {
+    width: 20px;
+    margin-left: 12px;
+    top: 10px;
+}
+
+.menu-icon {
+    width: 20px;
+    margin-left: 12px;
+    top: 10px;
+    display: none;
+}
+
+
+/* Style all font awesome icons */
+
+.fa {
+    padding: 20px;
+    font-size: 25px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav .mediaicon a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* Add a hover effect if you want */
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+
+/* categories */
+
+
+/* Contact  */
+
+.categories {
+    margin: 100px 0;
+}
+
+.column-2 {
+    float: left;
+    width: 30%;
+    padding: 6px;
+    margin: 15px;
+    transition: transform 2s;
+}
+
+.column-2 img:hover {
+    cursor: pointer;
+    color: rgb(255, 44, 44);
+    transform: translateY(-15px);
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.row {
+    flex-basis: 25%;
+    min-width: 200px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.pragraph {
+    margin: 15px;
+    margin-top: -5%;
+}
+
+.link h1 a {
+    text-decoration: none;
+    color: black;
+}
+
+.link h1 {
+    margin: 15px;
+    font-size: 30px;
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+.link h1 a:hover {
+    color: rgb(180, 180, 180);
+    cursor: pointer;
+}
+
+.link hr {
+    margin-right: 2rem;
+}
+
+
+/* form  */
+
+.pragraph-1 {
+    padding: 5px;
+    margin: 1%;
+    margin-top: 10%;
+}
+
+.pragraph-1 h3 {
+    font-size: 1.5rem;
+}
+
+form {
+    margin: 15px;
+    margin-top: 3rem;
+}
+
+input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+input[type=text-2] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+}
+
+.title {
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Ribeye', cursive;
+}
+
+.title h4:hover {
+    cursor: default;
+}
+
+form h3 {
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.button {
+    transition-duration: 0.4s;
+    border: 2px solid black;
+    width: 170px;
+}
+
+.button h2 {
+    text-align: center;
+    padding: 5px 2px;
+    font-family: 'Secular One', sans-serif;
+}
+
+.button:hover {
+    background-color: #000000;
+    cursor: pointer;
+    color: white;
+}
+
+
+/* ABOUT  */
+
+.pragraph-2 {
+    margin: 15px;
+    margin-top: 115px;
+    font-size: 1rem;
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+.service {
+    margin: 10px 15px;
+}
+
+.pragraph-2 h2 {
+    font-size: 25px;
+}
+
+.service h4 {
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+
+/*FOOTER*/
+
+footer {
+    background: #16222A;
+    background: -webkit-linear-gradient(59deg, #3A6073, #16222A);
+    background: linear-gradient(59deg, #3A6073, #16222A);
+    color: white;
+    margin-top: 100px;
+}
+
+footer a {
+    color: #fff;
+    font-size: 14px;
+    transition-duration: 0.2s;
+}
+
+footer a:hover {
+    color: #FA944B;
+    text-decoration: none;
+}
+
+.copy {
+    font-size: 12px;
+    padding: 10px;
+    border-top: 1px solid #FFFFFF;
+}
+
+.footer-middle {
+    padding-top: 2em;
+    color: white;
+}
+
+
+/*SOCİAL İCONS*/
+
+
+/* footer social icons */
+
+ul.social-network {
+    list-style: none;
+    display: inline;
+    margin-left: 0 !important;
+    padding: 0;
+}
+
+ul.social-network li {
+    display: inline;
+    margin: 0 5px;
+}
+
+
+/* footer social icons */
+
+.social-network a.icoFacebook:hover {
+    background-color: #3B5998;
+}
+
+.social-network a.icoLinkedin:hover {
+    background-color: #007bb7;
+}
+
+.social-network a.icoFacebook:hover i,
+.social-network a.icoLinkedin:hover i {
+    color: #fff;
+}
+
+.social-network a.socialIcon:hover,
+.socialHoverClass {
+    color: #44BCDD;
+}
+
+.social-circle li a {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto 0 auto;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+}
+
+.social-circle li i {
+    margin: 0;
+    line-height: 30px;
+    text-align: center;
+}
+
+.social-circle li a:hover i,
+.triggeredHover {
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -ms--transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.social-circle i {
+    color: #595959;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    transition: all 0.8s;
+}
+
+.social-network a {
+    background-color: #F9F9F9;
+}
+
+
+/* media queries  */
+
+
+/* for menu  */
+
+@media only screen and (max-width:1024px) {
+    .logo {
+        display: block;
+    }
+    nav ul {
+        position: absolute;
+        top: 65px;
+        left: 0%;
+        background: #345;
+        width: 100%;
+        overflow: hidden;
+    }
+    nav ul li {
+        margin-left: 15px;
+        display: block;
+        padding: 5px;
+        margin-right: 35px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    header nav ul li a {
+        color: white;
+    }
+    .mediaicon a {
+        display: none;
+    }
+    .menu-icon:hover {
+        cursor: pointer;
+    }
+    .menu-icon {
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        cursor: pointer;
+    }
+    .mediaicon img {
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        cursor: pointer;
+    }
+    .pragraph-1 {
+        margin-top: 18%;
+        font-size: 15px;
+    }
+}

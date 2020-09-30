@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Studio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ribeye&display=swap" rel="stylesheet">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ribeye&family=Secular+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- NAVBAR  -->
+    <header>
+        <!-- nav left  -->
+        <ul class="logo">
+            <li><a href="index.html">Image Studio</a>
+            </li>
+        </ul>
+        <nav>
+            <ul id="MenuItems">
+                <li>
+                    <a href="index.html"> work</a>
+                </li>
+                <li>
+                    <a href="about.html"> about</a> </li>
+                <li>
+                    <a href="Contact.html"> contact </a> </li>
+            </ul>
+        </nav>
+        <!-- nav right  -->
+        <nav>
+            <div class="mediaicon">
+                <img src="menu.png" class="menu-icon" onclick="menutoggle()">
+                <!-- Add font awesome icons -->
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-twitter"></a>
+            </div>
+        </nav>
+    </header>
+    <div class="pragraph-1">
+        <h3>If you have a project in mind, please <br>complete the form below to send your<br> enquiry.</h3>
+    </div>
+    <!-- form  -->
+    <div class="title">
+        <h4> Fill Up With Belief</h4>
+        <hr>
+    </div>
+    <form>
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname"><br>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="Email">
+        <label for="text-2">Bussiness Name:</label>
+        <input type="text-2" id="text-2" name="text-2">
+        <h3>Please Describe Your Bussiness:</h3>
+        <textarea>
+        </textarea>
+        <h3>Please Describe Your Project:</h3>
+        <textarea>
+        </textarea>
+        <h3>Additional Comments:</h3>
+        <textarea>
+        </textarea>
+        <div class="button">
+            <h2> Submit</h2>
+
+        </div>
+
+
+    </form>
+    <!-- Footer  -->
+
+
+
+
+
+    <footer class="mainfooter" role="contentinfo">
+        <div class="footer-middle">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <!--Column1-->
+                        <div class="footer-pad">
+                            <h4>Heading 1</h4>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#"></a>
+                                </li>
+                                <li><a href="#">Payment Center</a></li>
+                                <li><a href="#">Contact Directory</a></li>
+                                <li><a href="#">Forms</a></li>
+                                <li><a href="#">News and Updates</a></li>
+                                <li><a href="#">FAQs</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <!--Column1-->
+                        <div class="footer-pad">
+                            <h4>Heading 2</h4>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Website Tutorial</a></li>
+                                <li><a href="#">Accessibility</a></li>
+                                <li><a href="#">Disclaimer</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">FAQs</a></li>
+                                <li><a href="#">Webmaster</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <!--Column1-->
+                        <div class="footer-pad">
+                            <h4>Contact Us</h4>
+                            <ul class="list-unstyled">
+                                <li>Email:sakibsakhawat21@gmail.com</li>
+                                <li>Phone: +555222445(Random)</li>
+                                <li>Address:Somewhere in the Earth</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <h4>Follow Us</h4>
+                        <ul class="social-network social-circle">
+                            <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 copy">
+                        <p class="text-center">&copy; Copyright 2020 - Sakhawat Hossen(With help of bootstrap-Namiq Namaz#ThanksMan). All rights reserved.</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </footer>
+    <!-- js for toggle menu  -->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            } else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
